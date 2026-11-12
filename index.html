@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YESTICH LLC | Online retail company in the United States</title>
+<meta name="description" content="YESTICH LLC is an online retail company registered in the State of Wyoming, USA. We select practical everyday products and sell them online to customers across the United States.">
+<meta property="og:title" content="YESTICH LLC">
+<meta property="og:description" content="Online retail company registered in the State of Wyoming, USA.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23000'/%3E%3Cpath d='M15 13h11l6 12 6-12h11L37 35v16H27V35z' fill='%23fff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+
+<script>
+/* =====================================================================
+   EDIT YOUR COMPANY DETAILS HERE
+   Change only the text inside the quotes.
+   store: your Shopify store link, e.g. "https://shop.yestich.com".
+          Leave it empty ("") and all store buttons stay hidden.
+   ===================================================================== */
+window.SITE = {
+  email: "info@yestich.com",
+  phone: "+1 (307) 667-1967",
+  store: ""
+};
+</script>
+
+<style>
+:root{
+  --black:#000;
+  --white:#fff;
+  --ink-2:#2B2B2B;
+  --gray:#5F5F5F;
+  --soft:#F3F3F3;
+  --line:#E1E1E1;
+  --nav:72px;
+  --sans:"Archivo","Helvetica Neue",Arial,system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none !important}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nav);-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  margin:0;background:var(--white);color:var(--black);
+  font-family:var(--sans);font-size:1.0625rem;line-height:1.6;font-stretch:100%;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+}
+a{color:inherit}
+p,li,dd{text-wrap:pretty}
+p{margin:0}
+ul{list-style:none;margin:0;padding:0}
+svg{display:block}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:4px}
+.wrap{width:min(100% - 3rem, 1200px);margin-inline:auto}
+.skip{position:absolute;left:1rem;top:-4rem;z-index:50;background:#000;color:#fff;padding:.6rem 1rem;border-radius:8px}
+.skip:focus{top:1rem}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:3.1rem;padding:.8rem 1.55rem;border-radius:999px;
+  font-weight:700;font-size:1rem;line-height:1.2;text-decoration:none;
+  border:1.5px solid var(--black);transition:background-color .15s,color .15s,border-color .15s;
+  white-space:nowrap;
+}
+.btn-dark{background:var(--black);color:var(--white)}
+.btn-dark:hover{background:var(--ink-2);border-color:var(--ink-2)}
+.btn-line{background:transparent;color:var(--black)}
+.btn-line:hover{background:var(--black);color:var(--white)}
+.btn-white{background:var(--white);color:var(--black);border-color:var(--white)}
+.btn-white:hover{background:#DADADA;border-color:#DADADA}
+.btn-ghost{background:transparent;color:var(--white);border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{border-color:var(--white);background:rgba(255,255,255,.1)}
+
+/* ---------- Navigation ---------- */
+.nav{
+  position:sticky;top:0;z-index:30;background:rgba(255,255,255,.94);
+  -webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+  border-bottom:1px solid transparent;transition:border-color .2s;
+}
+.nav.scrolled{border-bottom-color:var(--line)}
+.nav-inner{height:var(--nav);display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.brand{display:inline-flex;align-items:center;gap:.65rem;text-decoration:none}
+.brand-mark{
+  width:2.1rem;height:2.1rem;border-radius:.55rem;background:var(--black);color:var(--white);
+  display:grid;place-items:center;font-weight:900;font-stretch:125%;font-size:1.2rem;line-height:1;
+}
+.brand-name{font-weight:900;font-stretch:125%;font-size:1.3rem;letter-spacing:.01em;line-height:1}
+.nav-links{display:flex;align-items:center;gap:.15rem}
+.nav-links a{
+  text-decoration:none;font-weight:500;font-size:.9375rem;color:#3A3A3A;
+  padding:.5rem .85rem;border-radius:999px;transition:background-color .15s,color .15s;
+}
+.nav-links a:hover{background:var(--soft);color:var(--black)}
+.nav-links a.active{color:var(--black);background:var(--soft)}
+.nav-cta{display:flex;align-items:center;gap:.5rem}
+.nav .btn{min-height:2.6rem;padding:.55rem 1.15rem;font-size:.9375rem}
+.menu-btn{
+  display:none;width:2.75rem;height:2.75rem;border-radius:999px;border:1.5px solid var(--black);
+  background:var(--white);cursor:pointer;place-items:center;padding:0;
+}
+.menu-btn span,.menu-btn span::before,.menu-btn span::after{
+  display:block;width:18px;height:2px;background:var(--black);position:relative;transition:transform .2s,opacity .2s;
+}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0}
+.menu-btn span::before{top:-6px}
+.menu-btn span::after{top:6px}
+.nav.open .menu-btn span{background:transparent}
+.nav.open .menu-btn span::before{transform:translateY(6px) rotate(45deg)}
+.nav.open .menu-btn span::after{transform:translateY(-6px) rotate(-45deg)}
+
+/* ---------- Hero ---------- */
+.hero{padding:clamp(3rem,7vw,6rem) 0 clamp(4.5rem,8vw,7rem)}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:clamp(2.5rem,5vw,5rem);align-items:center}
+.hero h1{
+  margin:0 0 1.5rem;font-size:clamp(2.75rem,1.5rem + 4.6vw,5.5rem);
+  font-stretch:116%;font-weight:850;line-height:.98;letter-spacing:-.035em;max-width:12ch;
+}
+.hero .lead{font-size:clamp(1.0625rem,1rem + .35vw,1.25rem);color:#333;max-width:48ch;margin-bottom:2.25rem}
+.hero-actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.hero-meta{display:flex;flex-wrap:wrap;gap:.5rem 1.75rem;margin-top:2.5rem;color:var(--gray);font-size:.9375rem}
+.hero-meta span{display:inline-flex;align-items:center;gap:.5rem}
+.hero-meta svg{width:18px;height:18px;flex:none}
+
+.profile-card{background:var(--black);color:var(--white);border-radius:24px;padding:clamp(1.5rem,3vw,2.25rem)}
+.card-head{display:flex;align-items:center;gap:1rem;padding-bottom:1.4rem;border-bottom:1px solid rgba(255,255,255,.22)}
+.card-mark{
+  width:3.4rem;height:3.4rem;border-radius:.85rem;background:var(--white);color:var(--black);
+  display:grid;place-items:center;font-weight:900;font-stretch:125%;font-size:1.9rem;line-height:1;flex:none;
+}
+.card-head small{display:block;color:rgba(255,255,255,.62);font-size:.875rem;line-height:1.3}
+.card-head strong{display:block;font-size:1.4rem;font-weight:800;font-stretch:112%;letter-spacing:-.01em;line-height:1.2}
+.card-list{margin:0}
+.card-list>div{
+  display:flex;justify-content:space-between;align-items:baseline;gap:1.5rem;
+  padding:.85rem 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:.9844rem;
+}
+.card-list dt{color:rgba(255,255,255,.62)}
+.card-list dd{margin:0;font-weight:600;text-align:right}
+.card-foot{display:flex;flex-wrap:wrap;gap:.6rem 1.5rem;padding-top:1.25rem;font-weight:600;font-size:.9844rem}
+.card-foot a{text-decoration-color:rgba(255,255,255,.45);text-underline-offset:.22em}
+.card-foot a:hover{text-decoration-color:var(--white)}
+
+/* One orchestrated load moment for the hero */
+.rise{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+.rise-2{animation-delay:.08s}.rise-3{animation-delay:.16s}.rise-4{animation-delay:.24s}.rise-5{animation-delay:.3s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}}
+
+/* ---------- Sections ---------- */
+.section{padding:clamp(4.5rem,9vw,7.5rem) 0}
+.section-soft{background:var(--soft)}
+.section-dark{background:var(--black);color:var(--white)}
+.section-line{border-top:1px solid var(--line)}
+.section-head{
+  display:grid;grid-template-columns:1fr 1fr;gap:1.25rem 4rem;align-items:end;
+  margin-bottom:clamp(2.5rem,5vw,4rem);
+}
+.section-head h2{
+  margin:0;font-size:clamp(2.1rem,1.3rem + 2.9vw,3.5rem);
+  font-stretch:114%;font-weight:800;letter-spacing:-.03em;line-height:1.03;
+}
+.section-head p{color:var(--gray);font-size:1.125rem;max-width:46ch}
+.section-dark .section-head p{color:rgba(255,255,255,.7)}
+
+/* About */
+.about-lead{font-size:clamp(1.25rem,1.05rem + .8vw,1.75rem);line-height:1.45;font-weight:500;letter-spacing:-.01em;max-width:34ch}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem 4rem;align-items:start;margin-bottom:clamp(3rem,6vw,4.5rem)}
+.about-grid h2{margin:0;font-size:clamp(2.1rem,1.3rem + 2.9vw,3.5rem);font-stretch:114%;font-weight:800;letter-spacing:-.03em;line-height:1.03}
+.about-body p+p{margin-top:1rem}
+.about-body p:not(.about-lead){color:#333}
+.values{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem clamp(1.5rem,3vw,3rem)}
+.values li{border-top:2px solid var(--black);padding-top:1.25rem}
+.values h3,.svc h3,.tile h3,.step h3{margin:0 0 .4rem;font-size:1.25rem;font-weight:800;font-stretch:108%;letter-spacing:-.01em;line-height:1.25}
+.values p{color:var(--gray)}
+
+/* Services as rows */
+.svc{display:grid;grid-template-columns:4rem 1fr 1.35fr;gap:1rem 2rem;align-items:start;padding:2rem 0;border-top:1px solid #D4D4D4}
+.svc:last-child{border-bottom:1px solid #D4D4D4}
+.svc-icon{width:3.25rem;height:3.25rem;border-radius:50%;background:var(--black);color:var(--white);display:grid;place-items:center}
+.svc-icon svg{width:24px;height:24px}
+.svc h3{font-size:1.5rem;margin-top:.55rem}
+.svc p{color:#3E3E3E;margin-top:.55rem}
+
+/* Product tiles */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.tile{border:1.5px solid var(--black);border-radius:20px;padding:1.75rem 1.75rem 1.9rem}
+.tile svg{width:40px;height:40px;margin-bottom:2.25rem}
+.tile p{color:var(--gray)}
+.note{
+  display:flex;gap:.85rem;align-items:flex-start;margin-top:1.5rem;padding:1.25rem 1.5rem;
+  background:var(--soft);border-radius:16px;color:#333;font-size:1rem;
+}
+.note svg{width:22px;height:22px;flex:none;margin-top:.15rem}
+
+/* Steps: a real sequence */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:2rem clamp(1.25rem,2.5vw,2.5rem);counter-reset:step}
+.step{border-top:1px solid rgba(255,255,255,.3);padding-top:1.5rem}
+.step-num{
+  display:grid;place-items:center;width:3rem;height:3rem;border-radius:50%;
+  border:1.5px solid var(--white);font-weight:800;font-stretch:112%;font-size:1.125rem;margin-bottom:1.5rem;
+}
+.step:last-child .step-num{background:var(--white);color:var(--black)}
+.step p{color:rgba(255,255,255,.72)}
+
+/* Commitments */
+.commit{display:grid;grid-template-columns:.9fr 1.1fr;gap:2rem 5rem;align-items:start}
+.commit h2{margin:0 0 1.25rem;font-size:clamp(2.1rem,1.3rem + 2.9vw,3.5rem);font-stretch:114%;font-weight:800;letter-spacing:-.03em;line-height:1.03}
+.commit-intro{color:var(--gray);font-size:1.125rem;max-width:40ch}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(2rem,5vw,4.5rem)}
+.checks li{display:flex;gap:.85rem;align-items:flex-start;padding:1.05rem 0;border-bottom:1px solid var(--line);font-weight:500}
+.checks li:nth-child(-n+2){border-top:1px solid var(--line)}
+.check{width:1.5rem;height:1.5rem;border-radius:50%;background:var(--black);color:var(--white);display:grid;place-items:center;flex:none;margin-top:.05rem}
+.check svg{width:14px;height:14px}
+
+/* Contact panel */
+.contact-panel{
+  background:var(--black);color:var(--white);border-radius:28px;
+  padding:clamp(2rem,5vw,4.5rem);display:grid;grid-template-columns:1.05fr .95fr;gap:2.5rem 4rem;align-items:center;
+}
+.contact-panel h2{margin:0 0 1.1rem;font-size:clamp(2.2rem,1.3rem + 3.2vw,3.75rem);font-stretch:114%;font-weight:800;letter-spacing:-.03em;line-height:1.02}
+.contact-panel p{color:rgba(255,255,255,.75);font-size:1.125rem;max-width:40ch;margin-bottom:2rem}
+.contact-actions{display:flex;flex-wrap:wrap;gap:.75rem}
+.contact-list>li{display:flex;align-items:center;gap:1rem;padding:1.15rem 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.contact-list>li:first-child{border-top:1px solid rgba(255,255,255,.18)}
+.contact-list .ic{width:2.75rem;height:2.75rem;border-radius:50%;border:1.5px solid rgba(255,255,255,.4);display:grid;place-items:center;flex:none}
+.contact-list .ic svg{width:20px;height:20px}
+.contact-list .cl-k{display:block;color:rgba(255,255,255,.6);font-size:.875rem;line-height:1.3}
+.contact-list .cl-v{display:block;font-weight:700;font-size:1.125rem;overflow-wrap:anywhere}
+.contact-list a{text-decoration:none}
+.contact-list a:hover{text-decoration:underline;text-underline-offset:.2em}
+
+/* ---------- Footer ---------- */
+.footer{border-top:1px solid var(--line);padding:3.5rem 0 2rem;font-size:.9375rem}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2.5rem}
+.foot-grid p{color:var(--gray);max-width:38ch;margin-top:1rem}
+.foot-grid h3{margin:0 0 .9rem;font-size:.9375rem;font-weight:800}
+.foot-grid li+li{margin-top:.5rem}
+.foot-grid a{color:#3A3A3A;text-decoration:none}
+.foot-grid a:hover{color:var(--black);text-decoration:underline;text-underline-offset:.2em}
+.foot-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem 2rem;margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--gray);font-size:.875rem}
+
+/* ---------- Responsive ---------- */
+@media (max-width:980px){
+  .hero-grid{grid-template-columns:1fr}
+  .hero h1{max-width:14ch}
+  .profile-card{max-width:560px}
+  .section-head,.about-grid,.commit{grid-template-columns:1fr}
+  .tiles{grid-template-columns:repeat(2,1fr)}
+  .steps{grid-template-columns:repeat(2,1fr)}
+  .contact-panel{grid-template-columns:1fr}
+  .svc{grid-template-columns:4rem 1fr}
+  .svc p{grid-column:2}
+}
+@media (max-width:900px){
+  .menu-btn{display:grid}
+  .nav-links{
+    display:none;position:absolute;top:var(--nav);left:0;right:0;flex-direction:column;align-items:stretch;
+    background:var(--white);padding:.75rem 1.5rem 1.5rem;border-bottom:1px solid var(--line);gap:.25rem;
+  }
+  .nav.open .nav-links{display:flex}
+  .nav-links a{padding:.85rem 1rem;font-size:1.0625rem}
+  .nav-cta .btn{display:none}
+}
+@media (max-width:640px){
+  body{font-size:1rem}
+  .wrap{width:min(100% - 2.5rem, 1200px)}
+  .values,.tiles,.steps,.checks{grid-template-columns:1fr}
+  .checks li:nth-child(2){border-top:0}
+  .svc{grid-template-columns:1fr;gap:.75rem;padding:1.75rem 0}
+  .svc p{grid-column:1;margin-top:0}
+  .svc h3{margin-top:.25rem}
+  .tile svg{margin-bottom:1.25rem}
+  .card-list>div{flex-direction:column;gap:.1rem}
+  .card-list dd{text-align:left}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .foot-grid>div:first-child{grid-column:1 / -1}
+  .btn{white-space:normal}
+}
+</style>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="YESTICH, back to top">
+      <span class="brand-mark" aria-hidden="true">Y</span>
+      <span class="brand-name">YESTICH</span>
+    </a>
+    <nav class="nav-links" id="menu" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#services">What we do</a>
+      <a href="#products">Products</a>
+      <a href="#process">How it works</a>
+      <a href="#commitments">Commitments</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a class="btn btn-line" data-link="store" href="#" hidden>Visit store</a>
+      <a class="btn btn-dark" href="#contact">Contact us</a>
+      <button class="menu-btn" type="button" aria-controls="menu" aria-expanded="false" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <h1 class="rise">Practical products for everyday life.</h1>
+      <p class="lead rise rise-2">YESTICH LLC is an online retail company registered in the State of Wyoming. We select useful consumer products and sell them directly to customers across the United States through our online store.</p>
+      <div class="hero-actions rise rise-3">
+        <a class="btn btn-dark" href="#contact">Contact us</a>
+        <a class="btn btn-line" data-link="store" href="#" hidden>Visit our store</a>
+        <a class="btn btn-line" href="#about">About the company</a>
+      </div>
+      <div class="hero-meta rise rise-4">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Wyoming, USA</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7h11v10H3z"/><path d="M14 10h4l3 3v4h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></svg>Shipping across the U.S.</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg>Replies within 1 business day</span>
+      </div>
+    </div>
+
+    <aside class="profile-card rise rise-5" aria-label="Company profile">
+      <div class="card-head">
+        <div class="card-mark" aria-hidden="true">Y</div>
+        <div><small>Company profile</small><strong>YESTICH LLC</strong></div>
+      </div>
+      <dl class="card-list">
+        <div><dt>Entity type</dt><dd>Limited liability company</dd></div>
+        <div><dt>Registered in</dt><dd>State of Wyoming, USA</dd></div>
+        <div><dt>Industry</dt><dd>E-commerce, online retail</dd></div>
+        <div><dt>Customers</dt><dd>Consumers in the United States</dd></div>
+        <div><dt>Sales channel</dt><dd>Own online store</dd></div>
+      </dl>
+      <div class="card-foot">
+        <a data-link="email" href="mailto:info@yestich.com"><span data-site="email">info@yestich.com</span></a>
+        <a data-link="phone" href="tel:+13076671967"><span data-site="phone">+1 (307) 667-1967</span></a>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section section-line" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <h2>About YESTICH</h2>
+      <div class="about-body">
+        <p class="about-lead">We run a focused, customer-first online store for practical everyday products.</p>
+        <p>YESTICH LLC was formed in the State of Wyoming to sell consumer goods online. We look for products that make daily routines easier, describe them honestly, price them fairly and stand behind every order. We operate fully online and serve customers across the United States.</p>
+      </div>
+    </div>
+    <ul class="values">
+      <li><h3>Useful products</h3><p>We only list products that solve a real everyday need at home or on the go.</p></li>
+      <li><h3>Fair, clear prices</h3><p>The price customers see is the price they pay. No hidden fees at checkout.</p></li>
+      <li><h3>Real support</h3><p>Every question is answered by email or phone within one business day.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section class="section section-soft" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>What we do</h2>
+      <p>We manage every part of the customer experience, from choosing products to after-sale support.</p>
+    </div>
+    <div class="svc-list">
+      <div class="svc">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/><path d="m7.8 10.6 2 2 3.6-3.8"/></svg></div>
+        <h3>Product selection</h3>
+        <p>We research products, compare options and choose items that are practical, well made and good value for money.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></div>
+        <h3>Online store</h3>
+        <p>We run our own online store, where customers browse products, place orders and pay through a secure checkout.</p>
+      </div>
+      <div class="svc">
+        <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg></div>
+        <h3>Customer care</h3>
+        <p>We handle order questions, delivery tracking, returns and refunds, so every customer has one place to go for help.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section class="section" id="products">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Product categories</h2>
+      <p>General consumer goods for the home and everyday life, chosen for usefulness and value.</p>
+    </div>
+    <ul class="tiles">
+      <li class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 12 4l9 7"/><path d="M5.5 9.5V20h13V9.5"/><path d="M10 20v-5.5h4V20"/></svg>
+        <h3>Home and living</h3><p>Storage, lighting and small décor for everyday rooms.</p>
+      </li>
+      <li class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 10h16v5.5A4.5 4.5 0 0 1 15.5 20h-7A4.5 4.5 0 0 1 4 15.5z"/><path d="M2 10h20"/><path d="M9.5 3.5c0 1.2-1 1.6-1 2.8M14.5 3.5c0 1.2-1 1.6-1 2.8"/></svg>
+        <h3>Kitchen and dining</h3><p>Tools, gadgets and accessories for cooking at home.</p>
+      </li>
+      <li class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18h2"/></svg>
+        <h3>Tech accessories</h3><p>Phone stands, chargers, cables, cases and desk gear.</p>
+      </li>
+      <li class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.5 6.5v11M17.5 6.5v11M3.5 9v6M20.5 9v6M6.5 12h11"/></svg>
+        <h3>Fitness and outdoor</h3><p>Simple gear for workouts, travel and time outside.</p>
+      </li>
+      <li class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6.5" cy="10" r="1.7"/><circle cx="10" cy="6.2" r="1.7"/><circle cx="14.5" cy="6.2" r="1.7"/><circle cx="18" cy="10" r="1.7"/><path d="M7.8 17.2c0-2.7 2.1-5.2 4.4-5.2s4.4 2.5 4.4 5.2c0 1.6-1.2 2.6-2.5 2.6-.9 0-1.3-.5-1.9-.5s-1 .5-1.9.5c-1.3 0-2.5-1-2.5-2.6z"/></svg>
+        <h3>Pet supplies</h3><p>Toys, bowls and grooming tools for cats and dogs.</p>
+      </li>
+      <li class="tile">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M5 12v8h14v-8M12 8v12"/><path d="M12 8C10.5 5 7 4.5 7 6.5S10 8 12 8zM12 8c1.5-3 5-3.5 5-1.5S14 8 12 8z"/></svg>
+        <h3>Gifts</h3><p>Useful presents for birthdays, holidays and housewarmings.</p>
+      </li>
+    </ul>
+    <p class="note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.5v.5"/></svg><span>We sell general consumer goods only. We don't sell age-restricted or regulated products such as tobacco, alcohol, weapons, supplements or medication.</span></p>
+  </div>
+</section>
+
+<!-- ================= PROCESS ================= -->
+<section class="section section-dark" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>How an order works</h2>
+      <p>Every order follows the same four steps, and customers are kept updated by email at each one.</p>
+    </div>
+    <ol class="steps" style="list-style:none;margin:0;padding:0">
+      <li class="step"><div class="step-num">1</div><h3>Order</h3><p>The customer chooses a product and pays through a secure checkout.</p></li>
+      <li class="step"><div class="step-num">2</div><h3>Confirmation</h3><p>An order confirmation is sent by email right away.</p></li>
+      <li class="step"><div class="step-num">3</div><h3>Shipping</h3><p>The order is shipped and a tracking number is emailed to the customer.</p></li>
+      <li class="step"><div class="step-num">4</div><h3>Delivery</h3><p>The package arrives at the customer's door. We follow up on any issue.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ================= COMMITMENTS ================= -->
+<section class="section" id="commitments">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Our commitments</h2>
+      <p>The standards we hold ourselves to with every customer and every order.</p>
+    </div>
+    <ul class="checks">
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>Accurate product descriptions and photos</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>Clear prices with no hidden fees</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>Secure checkout through established payment processors</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>Every order shipped with tracking</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>A clear, published return and refund policy</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>Replies to every message within one business day</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>Customer data handled securely and never sold</li>
+      <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span>Following U.S. consumer protection and sales tax rules</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="contact-panel">
+      <div>
+        <h2>Get in touch</h2>
+        <p>Questions about an order, a product or working with us? Write or call, and we'll reply within one business day.</p>
+        <div class="contact-actions">
+          <a class="btn btn-white" data-link="email" href="mailto:info@yestich.com">Send an email</a>
+          <a class="btn btn-ghost" data-link="phone" href="tel:+13076671967">Call us</a>
+        </div>
+      </div>
+      <ul class="contact-list">
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></svg></span>
+          <div><span class="cl-k">Email</span><span class="cl-v"><a data-link="email" href="mailto:info@yestich.com"><span data-site="email">info@yestich.com</span></a></span></div>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span>
+          <div><span class="cl-k">Phone</span><span class="cl-v"><a data-link="phone" href="tel:+13076671967"><span data-site="phone">+1 (307) 667-1967</span></a></span></div>
+        </li>
+        <li data-store-row hidden>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></span>
+          <div><span class="cl-k">Online store</span><span class="cl-v"><a data-link="store" data-store-text href="#"></a></span></div>
+        </li>
+        <li>
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <div><span class="cl-k">Registered in</span><span class="cl-v">State of Wyoming, USA</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top" aria-label="YESTICH, back to top">
+          <span class="brand-mark" aria-hidden="true">Y</span>
+          <span class="brand-name">YESTICH</span>
+        </a>
+        <p>YESTICH LLC is a limited liability company registered in the State of Wyoming, USA, selling everyday consumer products online.</p>
+      </div>
+      <div>
+        <h3>Company</h3>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">What we do</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#process">How it works</a></li>
+          <li><a href="#commitments">Commitments</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a data-link="email" href="mailto:info@yestich.com"><span data-site="email">info@yestich.com</span></a></li>
+          <li><a data-link="phone" href="tel:+13076671967"><span data-site="phone">+1 (307) 667-1967</span></a></li>
+          <li data-store-row hidden><a data-link="store" href="#">Online store</a></li>
+          <li>Wyoming, USA</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>&copy; <span id="year">2026</span> YESTICH LLC. All rights reserved.</p>
+      <p>Registered in the State of Wyoming, USA</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var S = window.SITE || {};
+
+  // Fill in contact details from the settings at the top of the file
+  document.querySelectorAll('[data-site]').forEach(function(el){
+    var v = S[el.getAttribute('data-site')];
+    if (v) el.textContent = v;
+  });
+  document.querySelectorAll('a[data-link="email"]').forEach(function(a){
+    if (S.email) a.href = 'mailto:' + S.email;
+  });
+  document.querySelectorAll('a[data-link="phone"]').forEach(function(a){
+    if (S.phone) a.href = 'tel:' + S.phone.replace(/[^+\d]/g, '');
+  });
+  var store = (S.store || '').trim();
+  if (store){
+    var url = /^https?:\/\//i.test(store) ? store : 'https://' + store;
+    document.querySelectorAll('a[data-link="store"]').forEach(function(a){
+      a.href = url; a.target = '_blank'; a.rel = 'noopener'; a.hidden = false;
+    });
+    document.querySelectorAll('[data-store-text]').forEach(function(a){
+      a.textContent = url.replace(/^https?:\/\//i, '').replace(/\/$/, '');
+    });
+    document.querySelectorAll('[data-store-row]').forEach(function(r){ r.hidden = false; });
+  }
+  var y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+
+  // Navigation: border on scroll, mobile menu, current section
+  var nav = document.getElementById('nav');
+  var btn = nav.querySelector('.menu-btn');
+  function onScroll(){ nav.classList.toggle('scrolled', window.scrollY > 8); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  function setMenu(open){
+    nav.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
+  btn.addEventListener('click', function(){ setMenu(!nav.classList.contains('open')); });
+  document.querySelectorAll('#menu a').forEach(function(a){ a.addEventListener('click', function(){ setMenu(false); }); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setMenu(false); });
+
+  if ('IntersectionObserver' in window){
+    var links = {};
+    document.querySelectorAll('#menu a').forEach(function(a){ links[a.getAttribute('href').slice(1)] = a; });
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (en.isIntersecting){
+          Object.keys(links).forEach(function(k){ links[k].classList.toggle('active', k === en.target.id); });
+        }
+      });
+    }, {rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(links).forEach(function(id){ var s = document.getElementById(id); if (s) io.observe(s); });
+  }
+})();
+</script>
+</body>
+</html>
